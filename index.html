@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/63ce28b4a6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./responsive.css">
+
+</head>
+
+<body>
+    <div class="logo">
+        <h1 style="color: rgb(233, 255, 183);">Weather<span style="color: yellow;">Vue</span></h1>
+        <img src="./assets/images/logo.png" alt="" width="60rem">
+    </div>
+    
+    <div class="box">
+        <div class="container">
+            <div class="sidebar">
+                <!-- search index -->
+                <div class="search">
+                    <input type="text" placeholder="Enter Location" id="cityInput">
+                    <button id="searchBtn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+                <!-- weather icon showing -->
+                <div class="weather-icon">
+                    <img src="./assets/icons/sun/sun.png" alt="" id="icon">
+                </div>
+                <!-- reports -->
+                <div class="reports">
+                    <!-- temperature -->
+                    <div class="temp-box">
+                        <div class="temperature">
+                            <p id="temp-c"></p>
+                            <sup>°C</sup>
+                        </div>
+                        <!-- local time -->
+                        <div class="localTime">
+                            <p id="loc-time"></p>
+                        </div>
+                    </div>
+                    <!-- draw an underline -->
+                    <div class="divider"></div>
+                    <!-- rain conditions -->
+                    <div class="condition-rain">
+                        <div class="condition">
+                            <i class="fa-solid fa-cloud"></i>
+                            <div class="condition" id="condition">condition</div>
+                        </div>
+                        <div class="rain">
+                            <i class="fas fa-tint"></i>
+                            <!-- <span>Precipitation</span> -->
+                            <p id="rain"></p>
+                        </div>
+                    </div>
+                   
+                </div>
+                 <!-- City name -->
+                 <div class="cityName">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p id="city-name"></p>
+                </div>
+            </div>
+
+            <!-- main body -->
+            <div class="main">
+                <!-- option of today and weekly updates -->
+                <div class="option"> 
+                    <div class="today">
+                        <p class="forcast-head">Today's updates</p>
+                        <div class="cards" id="weather-cards-hour">
+                            <!-- <div class="card">
+                                    <p class="day-name">Monday</p>
+                                    <div class="card-icon">
+                                        <img src="./assets/moon.png" alt="" width="300">
+                                    </div>
+                                    <div class="day-temp">
+                                        <p class="temp">max:</p>
+                                        <p class="temp">min:</p>
+                                    </div>
+                            </div> -->
+                        </div>
+                    </div>                  
+                    <div class="week">
+                        <p class="forcast-head">Weekly Forecast</p>
+                        <div class="cards" id="weather-cards-week">
+                            <!-- <div class="card">
+                                    <p class="day-name">Monday</p>
+                                    <div class="card-icon">
+                                        <img src="./assets/moon.png" alt="" width="300">
+                                    </div>
+                                    <div class="day-temp">
+                                    <p class="temp">32</p>
+                                    </div>
+                            </div> -->
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <!-- weather cards -->
+                <!-- Today's highlights -->
+                <div class="highlights">
+                    <p class="heading">Today's highlights</p>
+                    <!-- starting cards of updates -->
+                    <div class="cards-highlight">
+                        <!-- UV Index -->
+                        <div class="card2">
+                            <p class="card-heading">UV Index</p>
+                            <div class="content">
+                                <p class="uv-index hl-center" >0</p>
+                                <p class="uv-text hl-status">low</p>
+                            </div>
+                        </div>
+                        <!-- Wind status -->
+                        <div class="card2">
+                            <p class="card-heading">Wind status</p>
+                            <div class="content">
+                                <p class="wind-speed hl-center">0</p>
+                                <p class="wind-status hl-status">low</p>
+                            </div>
+                        </div>
+                        <!-- Sunrise & Sunset -->
+                        <div class="card2">
+                            <p class="card-heading">Sunrise & Sunset</p>
+                            <div class="content hl-sun">
+                                <p class="sunrise">0</p>
+                                <p class="sunset">low</p>
+                            </div>
+                        </div>
+                        <!-- Humidity -->
+                        <div class="card2">
+                            <p class="card-heading">Humidity</p>
+                            <div class="content">
+                                <p class="humidity hl-center">0</p>
+                                <p class="humidity-status hl-status">low</p>
+                            </div>
+                        </div>
+                        <!-- Visibility -->
+                        <div class="card2">
+                            <p class="card-heading">Visibility</p>
+                            <div class="content">
+                                <p class="visibility hl-center">0</p>
+                                <p class="visibility-status hl-status">low</p>
+                            </div>
+                        </div>
+                        <!-- Feels like -->
+                        <div class="card2">
+                            <p class="card-heading ">Feels like</p>
+                            <div class="content">
+                                <p class="feels-like hl-center">0</p>
+                            </div>
+                        </div>
+                        <!-- end of cards  -->
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

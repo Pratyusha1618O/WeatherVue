@@ -1,0 +1,832 @@
+html {
+    font-size: 62.5%;
+    /* 62.5% = 10px = 1rem */
+}
+
+@media (max-width:2560px) {
+
+    /* 1440 - 2560*/
+    .container {
+        height: 62rem;
+        width: 130rem;
+        transform: translateY(-1rem);
+    }
+
+    #weather-cards-week .card {
+        width: 10rem;
+    }
+
+    .card2:hover {
+        width: 13.1rem;
+    }
+
+    .cityName {
+        margin-top: 21rem;
+        justify-content: center;
+    }
+
+}
+
+@media (max-width:1440px) {
+
+    /*1024 - 1440*/
+    .container {
+        height: 62rem;
+        width: 106rem;
+    }
+
+    .box {
+        margin-bottom: 5rem;
+    }
+
+    .logo {
+        margin-bottom: 2rem;
+    }
+
+    .cityName {
+        margin-top: 20rem;
+        justify-content: center;
+    }
+
+    .option {
+        gap: none;
+        transform: translateX(-2.5rem);
+    }
+
+    .cards {
+        grid-template-columns: repeat(12, 1fr);
+    }
+
+    .today .forcast-head {
+        margin: 1rem 0 1rem 1.5rem;
+    }
+
+    .week .forcast-head {
+        margin: 0 0 2rem 1.5rem;
+    }
+
+    .card {
+        border-radius: 1rem;
+        text-align: center;
+        padding: 0.5rem 0.1rem;
+    }
+
+    #weather-cards-week .card {
+        width: 8rem;
+    }
+
+    #weather-cards-hour .card {
+        width: 5.5rem;
+    }
+
+    /* __________Highlights________ */
+    .cards-highlight {
+        gap: 1rem;
+        margin-left: 2.5rem;
+    }
+
+    .card2 {
+        height: 10rem;
+        width: 11.5rem;
+        padding: 0.5rem;
+    }
+
+    .card2:hover {
+        width: 12rem;
+    }
+
+}
+
+@media (max-width:1024px) {
+
+    /*768 - 1024*/
+    .container {
+        height: 0rem;
+        width: 75rem;
+        flex-direction: column;
+        backdrop-filter: none;
+        box-shadow: none;
+        transform: translateY(-17rem);
+    }
+
+    .logo {
+        margin-bottom: 0;
+    }
+
+    .box {
+        min-height: 60vh;
+    }
+
+    #icon {
+        width: 15rem;
+        transform: translateX(45rem);
+        position: absolute;
+    }
+
+    .sidebar {
+        transform: translateY(-1rem);
+    }
+
+    .cityName {
+        margin-top: 3rem;
+        justify-content: center;
+    }
+
+    .search {
+        display: flex;
+        justify-content: center;
+        gap: 0.2rem;
+    }
+
+    .search input {
+        width: 65rem;
+        padding: 0.5rem;
+    }
+
+    .temperature {
+        font-size: 5.5rem;
+    }
+
+    .localTime {
+        font-size: 1.5rem;
+    }
+
+    .reports {
+        transform: translate(2rem);
+    }
+
+    .cards {
+        grid-template-columns: repeat(8, 1fr);
+        transform: translateY(-2rem);
+    }
+
+    .option {
+        padding: 0 5rem;
+        gap: 2rem;
+    }
+
+    /* __________Highlights________ */
+    .cards-highlight {
+        gap: 1rem;
+        margin-bottom: 10rem;
+        padding: 1rem 3rem;
+    }
+
+    .card2 {
+        height: 10rem;
+        width: 11.5rem;
+        padding: 0.5rem;
+    }
+
+    .card2:hover {
+        width: 12rem;
+    }
+
+    .highlights .heading {
+        padding: 0.2rem;
+        margin-left: 4rem;
+    }
+
+    .today {
+        backdrop-filter: blur(20px);
+        box-shadow: 0 0 20px rgba(10, 10, 10, 0.25);
+        border-radius: 2rem;
+        height: 38rem;
+        width: 70rem;
+        margin-top: 8rem;
+    }
+
+    .week {
+        backdrop-filter: blur(20px);
+        box-shadow: 0 0 20px rgba(10, 10, 10, 0.25);
+        border-radius: 2rem;
+        height: 20rem;
+        width: 70rem;
+        margin-top: 8rem;
+
+    }
+
+    #weather-cards-hour .card {
+        width: 7rem;
+    }
+
+    .highlights {
+        backdrop-filter: blur(20px);
+        box-shadow: 0 0 20px rgba(10, 10, 10, 0.25);
+        border-radius: 2rem;
+        height: 18rem;
+        margin: 8rem 0;
+    }
+
+    .cards-highlight {
+        transform: translateY(-2rem);
+    }
+
+    .today .forcast-head {
+        position: relative;
+        transform: translate(-4rem, -6rem);
+        padding: 0.5rem 5rem;
+        width: 30rem;
+    }
+
+    .week .forcast-head {
+        position: relative;
+        transform: translate(-4rem, -6rem);
+        padding: 0.5rem 5rem;
+        width: 30rem;
+
+    }
+
+    .highlights .heading {
+        position: relative;
+        transform: translate(-4rem, -6rem);
+        padding: 0.5rem 5rem;
+        width: 30rem;
+    }
+
+}
+
+@media (max-width:768px) {
+
+    /*580 - 768*/
+    .container {
+        height: 0rem;
+        width: 50rem;
+        transform: translateY(-16rem);
+    }
+
+    .box {
+        min-height: 60vh;
+    }
+
+    #icon {
+        transform: translateX(23rem);
+        position: absolute;
+    }
+
+    .sidebar {
+        height: 45rem;
+        transform: translateY(-2rem);
+    }
+
+    .cityName {
+        margin-top: 1rem;
+        justify-content: center;
+    }
+
+    .search {
+        display: flex;
+        justify-content: center;
+    }
+
+    .search input {
+        width: 30rem;
+    }
+
+    .temperature {
+        font-size: 6rem;
+    }
+
+    .localTime {
+        font-size: 1.5rem;
+    }
+
+    /* forcasting cards */
+    .cards {
+        grid-template-columns: repeat(4, 1fr);
+        transform: translateY(-3rem);
+    }
+
+    .cards {
+        padding: 2rem 0;
+    }
+
+    .today .forcast-head {
+        margin: 1rem 0 1rem 0;
+        width: 22rem;
+        padding: 0.5rem 2rem;
+    }
+
+    .week .forcast-head {
+        margin: 0 0 2rem 0;
+        width: 22rem;
+        padding: 0.5rem 2rem;
+    }
+
+    .card {
+        border-radius: 1rem;
+        text-align: center;
+        padding: 0.1rem;
+    }
+
+    #weather-cards-week .card {
+        width: 8rem;
+    }
+
+    #weather-cards-hour .card {
+        width: 8rem;
+    }
+
+    .today {
+        backdrop-filter: blur(20px);
+        box-shadow: 0 0 20px rgba(10, 10, 10, 0.25);
+        border-radius: 2rem;
+        height: 70rem;
+        width: 45rem;
+        padding: 0 5rem;
+        margin-top: 6rem;
+    }
+
+    .week {
+        backdrop-filter: blur(20px);
+        box-shadow: 0 0 20px rgba(10, 10, 10, 0.25);
+        border-radius: 2rem;
+        height: 32rem;
+        width: 45rem;
+        padding: 0 5rem;
+        margin-top: 6rem;
+    }
+
+    .highlights {
+        backdrop-filter: blur(20px);
+        box-shadow: 0 0 20px rgba(10, 10, 10, 0.25);
+        border-radius: 2rem;
+        height: 30rem;
+        margin: 8rem 0;
+    }
+
+    /* __________Highlights________ */
+    .cards-highlight {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin-left: 1rem;
+    }
+
+    .today .forcast-head {
+        position: relative;
+        transform: translate(-8rem, -6rem);
+        padding: 0.5rem 5rem;
+        width: 30rem;
+    }
+
+    .week .forcast-head {
+        position: relative;
+        transform: translate(-8rem, -6rem);
+        padding: 0.5rem 5rem;
+        width: 30rem;
+
+    }
+
+    .highlights .heading {
+        position: relative;
+        transform: translate(-6rem, -6rem);
+        padding: 0.5rem 5rem;
+        width: 30rem;
+    }
+}
+
+@media (max-width:580px) {
+
+    /*425 - 580*/
+    .container {
+        height: 0rem;
+        width: 40rem;
+        transform: translateY(-16rem);
+    }
+
+    .box {
+        min-height: 60vh;
+    }
+
+    #icon {
+        width: 12rem;
+        transform: translate(18rem, -1rem);
+        position: absolute;
+    }
+
+    /* forcasting cards */
+    .cards {
+        grid-template-columns: repeat(4, 1fr);
+        transform: translateY(-5rem);
+    }
+
+    .card {
+        transform: translateX(-2.5rem);
+    }
+
+    .today {
+        height: 68rem;
+        width: 40rem;
+    }
+
+    .week {
+        height: 30rem;
+        width: 40rem;
+    }
+
+    .option {
+        transform: translateX(-5rem);
+    }
+
+    /* __________Highlights________ */
+    .cards-highlight {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        transform: translate(-2rem, -2rem);
+    }
+
+    .highlights {
+        margin-top: 8rem;
+        height: 28rem;
+    }
+
+    .today .forcast-head {
+        position: relative;
+        transform: translate(-8rem, -6rem);
+        padding: 0.5rem 5rem;
+        width: 30rem;
+    }
+
+    .week .forcast-head {
+        position: relative;
+        transform: translate(-8rem, -5rem);
+        padding: 0.5rem 5rem;
+        width: 30rem;
+
+    }
+
+    .highlights .heading {
+        position: relative;
+        transform: translate(-6rem, -5rem);
+        padding: 0.5rem 5rem;
+        width: 30rem;
+    }
+
+
+}
+
+@media (max-width:425px) {
+
+    /*375 - 425*/
+    .container {
+        height: 0rem;
+        width: 35rem;
+        transform: translateY(-19rem);
+    }
+
+    .box {
+        min-height: 60vh;
+    }
+
+    #icon {
+        width: 12rem;
+        transform: translate(15rem, -1rem);
+        position: absolute;
+    }
+
+    .temp-box {
+        font-size: 1rem;
+        transform: translateX(-1.5rem);
+    }
+
+    .divider {
+        transform: translateX(-1.5rem);
+        margin-top: 2rem;
+        width: 15rem;
+    }
+
+    .cityName {
+        margin-top: 3rem;
+    }
+
+    .sidebar {
+        transform: translate(0rem, -2rem);
+    }
+
+    /* forecasting cards */
+    .cards {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .card {
+        transform: translateX(-2.5rem);
+    }
+
+    #weather-cards-week .card {
+        width: 7rem;
+    }
+
+    #weather-cards-hour .card {
+        width: 6.8rem;
+    }
+
+    .today {
+        height: 67rem;
+        width: 35rem;
+        margin-top: 5rem;
+    }
+
+    .week {
+        height: 29rem;
+        width: 35rem;
+    }
+
+    .option {
+        transform: translateX(-5rem);
+    }
+
+    /* __________Highlights________ */
+    .cards-highlight {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        transform: translate(1rem, -2rem);
+    }
+
+    .highlights {
+        height: 40rem;
+        margin: 8rem 0;
+    }
+
+    .today .forcast-head {
+        position: relative;
+        transform: translate(-7rem, -6rem);
+        padding: 0.5rem 5rem;
+        width: 27rem;
+    }
+
+    .week .forcast-head {
+        position: relative;
+        transform: translate(-7rem, -5rem);
+        padding: 0.5rem 5rem;
+        width: 27rem;
+
+    }
+
+    .highlights .heading {
+        position: relative;
+        transform: translate(-6rem, -5rem);
+        padding: 0.5rem 5rem;
+        width: 30rem;
+    }
+
+}
+
+
+@media (max-width:375px) {
+
+    /*320 - 375*/
+    .container {
+        height: 0rem;
+        width: 28rem;
+        transform: translateY(-20rem);
+    }
+
+    .box {
+        min-height: 60vh;
+    }
+
+    .sidebar {
+        transform: translate(2rem, 2rem);
+    }
+
+    #icon {
+        width: 10rem;
+        transform: translate(12rem, -1rem);
+        position: absolute;
+    }
+
+    .temp-box {
+        transform: translateX(-1.5rem);
+    }
+
+    .temperature {
+        font-size: 4.5rem;
+    }
+
+    .localTime {
+        font-size: 1.2rem;
+    }
+
+    .divider {
+        transform: translateX(-1.5rem);
+        margin-top: 2rem;
+        width: 10rem;
+    }
+
+    .cityName {
+        margin-top: 5rem;
+    }
+
+    /* forecasting cards */
+    .cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .card {
+        transform: translateX(-2.5rem);
+
+    }
+
+    #weather-cards-week .card {
+        width: 7.5rem;
+
+    }
+
+    #weather-cards-hour .card {
+        width: 8rem;
+    }
+
+    .today {
+        height: 86rem;
+        width: 31rem;
+        margin-top: 8rem;
+    }
+
+    .week {
+        height: 38rem;
+        width: 35rem;
+        margin-top: 6rem;
+        backdrop-filter: none;
+        box-shadow: none;
+    }
+
+    .option {
+        transform: translateX(-5rem);
+    }
+
+    /* __________Highlights________ */
+    .cards-highlight {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        transform: translate(-0.5rem, -3rem);
+    }
+
+    .highlights {
+        margin-top: 12rem;
+        margin-left: 1rem;
+        width: 30rem;
+    }
+
+    .card2 {
+        height: 10rem;
+        width: 10.5rem;
+    }
+
+    .card2:hover {
+        width: 11rem;
+    }
+
+    .highlights {
+        height: 38rem;
+    }
+
+    .today .forcast-head {
+        position: relative;
+        transform: translate(-7rem, -6rem);
+        padding: 0.5rem 5rem;
+        width: 25rem;
+    }
+
+    .week .forcast-head {
+        position: relative;
+        transform: translate(-7rem, -5rem);
+        padding: 0.5rem 5rem;
+        width: 25rem;
+
+    }
+
+    .highlights .heading {
+        position: relative;
+        transform: translate(-6rem, -5rem);
+        padding: 0.5rem 5rem;
+        width: 25rem;
+    }
+}
+
+@media (max-width:340px) {
+    .sidebar {
+        transform: translate(2rem, 2rem);
+    }
+
+    /* forecasting cards */
+    .cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .card {
+        transform: translateX(-2.5rem);
+    }
+
+    #weather-cards-week .card {
+        width: 8rem;
+    }
+
+    #weather-cards-hour .card {
+        width: 8rem;
+    }
+
+    .today {
+        height: 86rem;
+        width: 31rem;
+        margin-top: 8rem;
+    }
+
+    .week {
+        height: 33rem;
+        width: 35rem;
+        margin-top: 5rem;
+    }
+
+    .option {
+        transform: translateX(-4rem);
+    }
+
+    /* __________Highlights________ */
+    .cards-highlight {
+        transform: translate(-0.1rem, -3rem);
+    }
+
+    .highlights {
+        margin-top: 15rem;
+        margin-left: 2rem;
+        width: 30rem;
+    }
+
+    .card2 {
+        height: 10rem;
+        width: 10.5rem;
+    }
+
+    .card2:hover {
+        width: 11rem;
+    }
+
+    .highlights {
+        height: 38rem;
+    }
+
+    .today .forcast-head {
+        position: relative;
+        transform: translate(-7rem, -6rem);
+        padding: 0.5rem 5rem;
+        width: 25rem;
+    }
+
+    .week .forcast-head {
+        position: relative;
+        transform: translate(-7rem, -5rem);
+        padding: 0.5rem 5rem;
+        width: 25rem;
+
+    }
+
+    .highlights .heading {
+        position: relative;
+        transform: translate(-6rem, -5rem);
+        padding: 0.5rem 5rem;
+        width: 25rem;
+    }
+}
+
+@media (max-width:320px) {
+
+    /*320 and less*/
+    .sidebar {
+        transform: translate(3rem, 2rem);
+    }
+
+    /* __________Highlights________ */
+    .cards-highlight {
+        transform: translate(-0.1rem, -3rem);
+    }
+
+    .highlights {
+        margin-top: 15rem;
+        margin-left: 3rem;
+        width: 30rem;
+    }
+
+    .card2 {
+        height: 10rem;
+        width: 10.5rem;
+    }
+
+    .card2:hover {
+        width: 11rem;
+    }
+
+    .today {
+        height: 90rem;
+        width: 31rem;
+        margin-top: 8rem;
+        margin-left: 1rem;
+    }
+
+    .week {
+        height: 33rem;
+        width: 35rem;
+        margin-left: 1rem;
+        margin-top: 5rem;
+    }
+
+}

@@ -1,0 +1,232 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background-color: rgb(148, 203, 255);
+    background-image: url(../weather/assets/images/cd.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+} 
+
+.logo{
+    display: flex;
+    align-items: center;
+    margin: 1rem 0 0rem 2rem;
+    font-size: 3rem;
+}
+.logo h1{
+    font-family: "Platypi", serif;
+    font-size: 3rem;
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+
+}
+
+.container{
+    display: flex;
+    gap: 2rem;
+    background-color: #ffffff29;
+    box-shadow: 0 0 50px #000000 ;
+    border-radius: 1.5rem;
+}
+
+.sidebar{
+    background-color: #ffffff86;
+    padding: 2rem;
+    border-radius: 1.5rem;
+}
+
+/*...... search bar ......*/
+.search input{
+    border-radius: 0.3rem;
+    border: 0.01rem solid #5c5cff;
+    box-shadow: inset 0 0 2px black;
+    padding: 0.2rem ;
+    width: 15rem;
+}
+#searchBtn{
+    border-radius: 0.3rem;
+    padding: 0.3rem 0.7rem;
+    border: none;
+    background-color: #5c5cff;
+    color: azure
+}
+#searchBtn:hover{
+    background-color: #2a2aff;
+    cursor: pointer;
+}
+.weather-icon img{
+    width: 12rem;
+    margin: 2rem 0 0 3rem;
+}
+
+/* .....reports..... */
+.temperature{
+    font-size: 4.5rem;
+    display: flex;
+}
+.localTime{
+    font-size: 1.3rem;
+}
+.divider{
+    height: 0.2rem;
+    width: 20rem;
+    border-radius: 5rem;
+    background-color: #ffffff67;
+    margin-top: 1rem;
+}
+
+/* .........rain conditions.......... */
+.condition-rain{
+    margin-top: 1rem;
+}
+.condition{
+    display: flex;
+    gap: 1rem;
+    font-size: 1rem;
+    width: 15rem;
+}
+.rain{
+    display: flex;
+    gap: 1.5rem;
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+}
+.fa-tint{
+    font-size: 1.5rem;
+}
+.fa-cloud{
+    font-size: 1.5rem;
+}
+/* .....location..... */
+.cityName{
+    display: flex;
+    gap: 0.5rem;
+    font-size: 1.2rem;
+    margin-top: 20rem;
+    background-color: rgba(255, 255, 255, 0.551);
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+}
+.fa-location-dot{
+    font-size: 1.8rem;
+}
+
+/* _______________________________________________________ */
+/* Main body */
+/* ____________Forecast___________ */
+.option{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.cards{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(12,1fr);
+    padding: 0 3rem;
+}
+
+.today .forcast-head{
+    background-color: #ffffffa1;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 1rem 0 1rem 0;
+    padding: 0.2rem;
+    width: 20rem;
+    border-radius: 2rem;
+    text-align: center;
+    border: 3px solid #6c91ffa9;
+    color: #050540;
+}
+.week .forcast-head{
+    background-color: #ffffff83;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin: 0 0 2rem 0;
+    padding: 0.2rem;
+    width: 20rem;
+    border-radius: 2rem;
+    text-align: center;
+    border: 3px solid #6c91ffa9;
+    color: #050540;
+}
+.card{
+    background-color: #dce2ead8;
+    box-shadow: 3px 3px 3px gray;
+    border-radius: 1rem;
+    text-align: center;
+    padding: 0.5rem;
+}
+.card:hover{
+    box-shadow: 7px 7px 10px #282727;
+    transition: 0.2s;
+}
+.day-name{
+    font-size: 1.1rem;
+}
+.day-temp{
+    font-size: 1.1rem;
+}
+/* __________Highlights________ */
+.cards-highlight{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-left: 5rem;
+}
+.highlights .heading{
+    background-color: #ffffff83;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 1rem 0 1rem 0;
+    padding: 0.2rem;
+    width: 20rem;
+    border-radius: 2rem;
+    text-align: center;
+    border: 3px solid #6c91ffa9;
+    color: #050540;
+}
+.card2{
+    background-color: #ffffff83;
+    box-shadow: 0 0 5px grey;
+    height: 10rem;
+    width: 13rem;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+.card2:hover{
+    box-shadow: 5px 5px 5px #3b3b3b;
+    transition: 0.2s;
+}
+.card-heading{
+    font-size: 1.3rem;
+    color: #585858;
+    font-weight: bold;
+}
+.hl-center{
+    margin: 1rem 0;
+    font-size: 1.7rem;
+    text-align: center;
+}
+.hl-status{
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+    color: #3b3b3b;
+    
+}
+.hl-sun{
+    font-size: 1.2rem;
+    margin-top: 0.8rem;
+}
